@@ -16,7 +16,7 @@
                 <td class="border px-4 py-2">{{ $post->title }}</td>
                 <td class="border px-4 py-2">{{ $post->body }}</td>
                 <td class="px-4 py-2">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                    <button wire:click="edit({{  $post->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                         Editar
                     </button>
                 </td>
